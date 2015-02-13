@@ -21,7 +21,8 @@ lazy val root = (project in file("."))
         "io.spray"            %%  "spray-servlet" % sprayV,
         "io.spray"            %%  "spray-testkit" % sprayV  % "test",
         "com.typesafe.akka"   %%  "akka-actor"    % akkaV,
-        "com.typesafe.akka"   %%  "akka-testkit"  % akkaV   % "test"
+        "com.typesafe.akka"   %%  "akka-testkit"  % akkaV   % "test",
+        "org.json4s" %% "json4s-native" % "3.2.10"
       )
     },
     resolvers ++= Seq(
