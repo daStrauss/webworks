@@ -13,5 +13,5 @@ if __name__ == '__main__':
 		ply = {"size": k+10 }
 		dtt = {"name":"jong", "age":12}
 		headers = {'content-type': 'application/json'}
-		r = requests.post("http://localhost:8080/pong", params=ply, data=json.dumps(dtt), headers=headers) 
+		r = requests.post("http://localhost:8080/catch", params=ply, data=json.dumps(dtt), headers=headers) 
 		print 'tm: {0}, info {1}'.format(time.time() - tm, r.text)
